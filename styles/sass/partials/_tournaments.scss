@@ -1,0 +1,11 @@
+section#tournaments {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .text-center {
+        margin-top: 48px;
+    }
+}

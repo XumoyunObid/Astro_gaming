@@ -1,0 +1,14 @@
+section#shop {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+        gap: 30px;  
+
+        :last-child {
+            display: none;
+        }
+    }
+    .text-center {
+        margin-top: 48px;
+    }
+}
