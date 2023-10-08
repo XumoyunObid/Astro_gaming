@@ -1,5 +1,5 @@
 $desktop: 1440px;
-$laptop: 768px;
+$tablet: 768px;
 $mobile: 375px;
 
 @media (max-width: $desktop) {
@@ -9,16 +9,19 @@ $mobile: 375px;
 
   header#main-header {
     nav.container {
-      ul {
-        visibility: hidden;
+      ul.main-nav {
+        display: none;
       }
 
       a {
         img {
-          transform: translateX(-450%);
           width: 78px;
           height: 60px;
         }
+      }
+
+      .dropdown {
+        display: block;
       }
     }
   }
@@ -127,15 +130,26 @@ $mobile: 375px;
   }
 }
 
-@media (max-width: $laptop) {
+@media (max-width: $tablet) {
   .container {
     width: 335px;
   }
 
   header#main-header {
     nav.container {
-      ul {
-        visibility: hidden;
+      ul.main-nav {
+        display: none;
+      }
+
+      .dropdown {
+        display: block;
+      }
+
+      a {
+        img {
+          width: 52px;
+          height: 40px;
+        }
       }
     }
   }
@@ -178,7 +192,7 @@ $mobile: 375px;
         text-align: center;
 
         p {
-            text-align: center;
+          text-align: center;
         }
       }
 
@@ -211,17 +225,17 @@ $mobile: 375px;
     }
 
     .card {
-        small {
-            font-size: 14px;
-        }
+      small {
+        font-size: 14px;
+      }
 
-        h5 {
-            font-size: 20px;
-        }
+      h5 {
+        font-size: 20px;
+      }
 
-        p {
-            font-size: 16px;
-        }
+      p {
+        font-size: 16px;
+      }
     }
 
     &:nth-child(4),
@@ -242,17 +256,17 @@ $mobile: 375px;
     }
 
     .card {
-        small {
-            font-size: 14px;
-        }
+      small {
+        font-size: 14px;
+      }
 
-        h5 {
-            font-size: 20px;
-        }
-        
-        p {
-            font-size: 16px;
-        }
+      h5 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
     .text-center {
       margin-top: 48px;
